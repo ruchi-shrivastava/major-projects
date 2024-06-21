@@ -471,10 +471,15 @@ color: #fff;
    color: #fff;
  }
 
+
  .project{
+   width: 100%;
+  }
+
+ .head-content{
    display: flex;
    flex-direction: column;
-   /* justify-content: space-between; */
+   justify-content: space-between;
    /* background-color:aquamarine; */
    padding: 5rem 50vh;
    gap: 20px;
@@ -487,10 +492,7 @@ color: #fff;
    text-align: center;
 
  }
- .project-category-container{
-   width: 100%;
-   /* border: 2px solid black; */
- }
+ 
  .project-category-container ul{
    display: flex;
    list-style: none;
@@ -513,38 +515,41 @@ color: #fff;
    display: grid;
    grid-template-rows: repeat(2,1fr);
    grid-template-columns: repeat(4,1fr);
-   margin-bottom: 3rem;
-   gap: 1rem;
-}
+   
+  
+   max-width: 1000px;
+   /* border: 2px solid red; */
+  }
 
 .project .project-list-container .project-item{
-object-fit: cover;
-object-position: center;
-background-position: center;
-aspect-ratio: 1/1;
-}
-.project .project-item.p-1{
-   background-image: url('./assest/project-1.jpg');
-}
-.project .project-item.p-2{
- background-image: url('./assest/project-2.jpg');
-}
-.project .project-item.p-3{
-   background-image: url('./assest/project-3.jpg');
+ /* border: 2px solid blue; */
+ /* width: 20rem; */
 }
 
-.project .project-item.p-4{
-   background-image: url('./assest/project-4.jpg');
+.project .project-list-container .project-item img{
+   width:100%;
+   
+   border: 1px solid red;
+   vertical-align: middle;
+   
+  
 }
-.project .project-item .p-5{
-   background-image: url('./assest/project-5.jpg');
+.project-item {
+   position: relative;
+   left:50%;
+   
 }
-.project .project-item.p-6{
-   background-image: url('./assest/project-6.jpg');
+.project .text{
+position: absolute;
+z-index: 50;
+
+
+
+
+
+
+
 }
-.project .project-item.p-7{
-   background-image: url('./assest/project-7.jpg');
-}
-.project .project-item.p-8{
-   background-image: url('./assest/project-8.jpg');
-}
+
+
+
